@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Quicksand:wght@500&display=swap');
+
+/* html element */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color: papayawhip;
+  --secondary-color: whitesmoke;
+  --font-color: #212427;
+}
+
+/* body styling */
+
+body{
+  background-color: var(--main-color);
+  color: whitesmoke;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.flex-wrapper{
+  width: 100%;
+  
+  height: 100%;
+  position: relative;
+  
+  background-image: url(ppforest.jpg);
+  background-size: cover;
+  background-repeat:no-repeat ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+ 
+}
+
+input[type="range"]{
+  background-color: rebeccapurple;
+  color: rebeccapurple;
+  
+  
+  cursor: pointer;
+  
+  overflow: hidden;
+}
+
+.header{
+  font-size: 2.5rem;
+  margin-top: 2rem;
+
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.headcont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  
+}
+
+.outline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  border: 3px solid white;
+  height: 50px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 50px;
+  background-color: rgba(33, 36, 39,0.8);
+  transition: 1s;
+  margin-bottom: 30px;
+  
+  
+}
+.outline:hover{
+  transform: scale(1.15);
+}
+
+span{
+  font-size: 1.25rem;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.last{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  bottom: 10px;
+  font-size: 1.325rem;
+  background-color: rgba(33, 36, 39,0.7);
+  border-radius: 10px;
+  white-space: nowrap;
+}
+.but-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+
+}
+#first{
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  border: 3px solid white;
+  background-color: rgba(33, 36, 39,0.9);
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#length{
+  font-size: 1.5rem;
+  
+ 
+}
+
+@media (max-width: 400px){
+  .header{
+    font-size: 1.5rem;
+  }
+  .outline{
+    bottom: 75px;
+  }
+  .last{
+    
+    white-space: nowrap;
+    
+  }
+  .headcont{
+    top: 20px;
+  }
+
+}
+select{
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(33, 36, 39,0.75);
+  font-family: 'Quicksand', sans-serif;
+}
