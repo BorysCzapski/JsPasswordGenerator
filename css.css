@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: papayawhip;
+  background-color: rgb(33, 36, 39);
   color: whitesmoke;
   font-family: 'Quicksand', sans-serif;
   display: flex;
