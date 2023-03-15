@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="css2.css">
+  <script src="main.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <p class="head-text">Password Generator</p>
+    </div>
+    <button class="outline" onclick="copyToClipboard('#text')" >
+      <span id="text"> </span>
+      
+    </button>
+    <div class="data">
+      <input type="range" name="insert" id="input" min="5" max="16" oninput="checkers()"> <span id="val">0</span>
+    </div>
+    <div class="flex">
+      
+<select id="options" name="options">
+    <option value="upperCase">upperCase</option>
+    <option value="lowerCase">lowerCase</option>
+    <option value="mixed">mixed</option>
+    
+</select><br/>
+
+    </div>
+    
+    <div class="but-flex">
+      <button id="first" onclick="randomizer()">Generate</button>
+
+    </div>
+  </div>
+
+
+</body>
+</html>
