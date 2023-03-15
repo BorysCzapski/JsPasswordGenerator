@@ -105,6 +105,19 @@ function copyToClipboard(element) {
   $temp.remove();
 }
 
+function checkers(){
+  var val = document.getElementById("input").value;
+  var txt = document.getElementById("val");
+  txt.innerText = val;
+  
+}
+checkers();
+
+function checkVal(){
+  var checkV = document.querySelector("#type").checked;
+  
+}
+
 
 
 
